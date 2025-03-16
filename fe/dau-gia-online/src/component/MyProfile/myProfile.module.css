@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.myProfileContainer {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border: 1px solid #9b9898;
+    border-radius: 10px;
+    margin-top: 120px;
+}
+
+.h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.p {
+    font-size: 20px;
+    color: #7e7e7e;
+    margin-bottom: 20px;
+}
+
+.line {
+    margin-top: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: #aba9a9;
+}
+
+.lineDoc {
+    border: 1px solid #84888B;
+    height: 340px;
+    margin-top: 40px;
+    margin-bottom: -100px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.formSection {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.formProfile {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.formProfile label {
+    flex: 1;
+    font-weight: 500;
+    color: #333;
+    margin-right: -150px;
+}
+
+.dob {
+    color: #7e7e7e;
+}
+
+.formProfile input {
+    flex: none;
+    width: 500px;
+    padding: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #84888B;
+    outline: none;
+    color: #7e7e7e;
+}
+
+.profilePictureSection {
+    flex: 1;
+    text-align: center;
+}
+
+.profilePictureLabel {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profilePicture {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.profilePicture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+    margin-bottom: 10px;
+}
+
+.profilePicture button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #acadac;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profilePicture button:hover {
+    background-color: #606161;
+}
+
+.btChange {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btnSelect {
+    color: black;
+}
+
+.btnChange {
+    display: inline-block;
+    width: 15%;
+    padding: 12px;
+    background-color: #acadac;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btnChange:hover {
+    background-color: #606161;
+}
+
+.customFileUpload {
+    position: relative;
+    display: inline-block;
+}
+
+.customFileUpload .btnSelect {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #acadac;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.customFileUpload .btnSelect:hover {
+    background-color: #606161;
+}
+
+.customFileUpload .customFileInput {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.notificationAlert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.notification {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.notificationButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnConfirm, .btnCancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnConfirm {
+    background-color: #28a745;
+    color: white;
+}
+
+.btnConfirm:hover {
+    background-color: #218838;
+}
+
+.btnCancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btnCancel:hover {
+    background-color: #c82333;
+}

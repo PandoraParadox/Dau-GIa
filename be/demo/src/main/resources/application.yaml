@@ -1,0 +1,36 @@
+
+spring :
+  datasource:
+    url: jdbc:mysql://localhost:3306/dau_gia
+    username: root
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+
+api:
+  prefix: /api/v1
+server:
+  port: 8081
+jwt:
+  expiration: 2592000
+  secretKey: bBmCgwRv2hC/424s0xvsQu3kI2fECuhjtziAysvD51s=
+
+payment:
+  vnPay:
+    url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+    returnUrl: http://localhost:8081/api/v1/payment/vn-pay-callback
+    tmnCode: 58X4B4HP
+    secretKey: VRLDWNVWDNPCOEPBZUTWSEDQAGXJCNGZ
+    version: 2.1.0
+    command: pay
+    orderType: other

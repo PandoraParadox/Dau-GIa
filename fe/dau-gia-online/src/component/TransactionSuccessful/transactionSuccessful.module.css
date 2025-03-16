@@ -1,0 +1,41 @@
+.confirmation {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.confirmationIcon {
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    color: green;
+}
+
+.confirmationTitle {
+    color: green;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.confirmationMessage {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.confirmationButton {
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.confirmationButton:hover {
+    box-shadow: 0 1px #007bff;
+}

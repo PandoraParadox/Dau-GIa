@@ -1,0 +1,165 @@
+ .backgroundImage {
+  background-color: #ffffff;
+  background-image: url(/public/image.jpg);
+  background-size: cover;
+  background-position-y: -120px;
+}
+
+.header {
+  background-color: white;
+  padding: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  width: 80px;
+  height: 60px;
+}
+
+.headerTitle {
+  font-size: 24px;
+  margin-left: 15px;
+  font-weight: auto;
+}
+
+.registerBox {
+  margin-top: 50px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  width: 1000px;
+  height: 610px;
+}
+
+.registerTitle {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #84888B;
+}
+
+.registerLine {
+  margin-top: 20px;
+  height: 2px;
+  background-color: #84888B;
+  width: 100%;
+}
+
+.registerForm {
+  margin-top: 1px;
+  text-align: left;
+}
+
+.inputEmail,
+.inputPassword,
+.inputRepassword,
+.inputFullname,
+.inputDate,
+.inputAddress {
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid #84888B;
+  border-radius: 0px;
+  margin-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #7E8285;
+  width: 100%;
+}
+
+.formGroup label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.formGroup span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+.formGroup {
+  margin: 70px;
+  position: relative;
+}
+.formGroup input:focus ~ label,
+.formGroup input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+
+.formControl:focus {
+  box-shadow: none;
+  background-color: #E9F1F8;
+  color: #090909;
+}
+.formControlLabel {
+  font-size: 15px;
+  color: #6C6C6C;
+  letter-spacing: 1px;
+}
+
+.btnOutlinePrimary {
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+.btnOutlinePrimary {
+  background-color: #2691d9;
+  color: #ffffff;
+  border: white;
+}
+.btnOutlinePrimary:hover{
+  border-color: #2691d9;
+  transition: .5s;
+}
+
+
+.eyeButton {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #adadad;
+  padding: 0;
+}
+
+.eyeButton:focus {
+  outline: none;
+}

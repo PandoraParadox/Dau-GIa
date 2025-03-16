@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.transactionHistoryContainer {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 188, 188);
+}
+
+.transactionHistoryTitle {
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.searchBox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.searchButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.searchButton:hover {
+    background-color: rgb(178, 7, 7);
+}
+
+.historyList {
+    overflow-y: scroll;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    background-color: #f6f3f3;
+    margin-left: 5px;
+    border: 1px solid rgb(228, 223, 223);
+}
+
+.historyItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.historyInfo {
+    flex: 1;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.time {
+    margin-top: 3px;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.content {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.amount {
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+}

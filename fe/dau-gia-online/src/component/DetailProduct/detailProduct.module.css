@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.container {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  background: white;
+  padding: 20px;
+  max-width: 1200px;
+  width: 65%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  position: relative;
+  left: 17%;
+  margin-top: 100px;
+}
+
+.imageSection {
+  display: contents;
+  align-items: center;
+}
+
+.thumbnailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.thumbnailContainer img {
+  width: 106px;
+  height: 106px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  object-fit: cover;
+}
+
+.thumbnailContainer img:hover {
+    border: 3px solid rgba(0, 128, 255, 0.6);
+    border-radius: 5px;
+}
+.thumbnail {
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+
+.activeThumbnail {
+  border: 3px solid rgba(0, 128, 255, 0.6);
+  border-radius: 5px;
+}
+
+.grayBackground {
+  height: 450px;
+  width: 80px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.mainImage {
+  width: 320px;
+  height: 450px;
+  object-fit: cover;
+  margin-left: -10px;
+  margin-right: -5px;
+}
+
+.arrow {
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: rgb(169, 164, 164);
+}
+
+.auctionCard {
+  flex: 1;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 420px;
+  max-width: 360px;
+}
+
+.auctionTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.currentBid {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.currentBid span {
+  color: black;
+}
+
+.currentBid .amount {
+  color: green;
+}
+
+.timer {
+  color: red;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bidOptions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 317px;
+}
+
+.bidOptions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background: #e6e6e6;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bidOptions span {
+  color: black;
+}
+
+.bidOptions .amount {
+  color: green;
+}
+
+.bidOptions button:hover {
+  background: rgb(162, 162, 162);
+}
+
+.bidInput {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #e6e6e6;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 317px;
+}
+
+.placeBid,
+.setMaxBid {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.placeBid {
+  background-color: white;
+  border: 1px solid #b8b7b7;
+  color: #3018b8;
+}
+
+.placeBid:hover {
+  background-color: #ddd;
+}
+
+.setMaxBid {
+  background-color: #3018b8;
+  color: white;
+}
+
+.setMaxBid:hover {
+  background-color: #0f0355;
+}
+.active__img {
+  border: 0.5px blue;
+}
